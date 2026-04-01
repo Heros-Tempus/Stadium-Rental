@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Stadium Rental Suite</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header class="hero">
+  <h1>Stadium Rental Suite</h1>
+  <p>A dual-application system for running Pokémon Stadium tournaments</p>
+  <div class="buttons">
+    <a href="https://github.com/Heros-Tempus/StadiumRentalClient" target="_blank">Client Repo</a>
+    <a href="https://github.com/Heros-Tempus/StadiumRentalServer" target="_blank">Server Repo</a>
+  </div>
+</header>
+
+<section>
+  <h2>Overview</h2>
+  <p>
+    This project consists of two coordinated applications that communicate through a shared MongoDB database.
+    Players build and submit teams through the client app, while the server app processes inputs and drives tournament gameplay.
+  </p>
+</section>
+
+<section>
+  <h2>Architecture</h2>
+  <pre>
+Player → Client App → MongoDB → Server App → Tournament Output
+  </pre>
+</section>
+
+<section>
+  <h2>How It Works</h2>
+  <ul>
+    <li>Players create and save their party</li>
+    <li>Data is stored in a shared MongoDB cluster</li>
+    <li>Players submit match inputs</li>
+    <li>Server reads and translates inputs into game actions</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Tech Stack</h2>
+  <ul>
+    <li>C# / .NET</li>
+    <li>MongoDB</li>
+    <li>Desktop applications (client/server)</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Why This Project</h2>
+  <p>
+    This system demonstrates multi-application architecture, shared-state coordination,
+    and real-time-style input handling across separate programs.
+  </p>
+</section>
+
+<footer>
+  <p>Created by Timothy Miller</p>
+</footer>
+
+</body>
+</html>
