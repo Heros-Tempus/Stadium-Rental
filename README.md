@@ -39,6 +39,7 @@ Player -> StadiumRentalClient -> Shared MongoDB Database -> StadiumRentalServer 
 
 Player-facing application used to:
 
+- serve the player available rental Pokémon
 - set up a party
 - save that party to the shared database
 - select a battle lineup
@@ -49,7 +50,6 @@ Player-facing application used to:
 Announcer-facing application used to:
 
 - read saved player parties
-- determine available rental Pokémon
 - read player inputs from the database
 - translate inputs into button commands
 - clear processed inputs after reading them
@@ -69,10 +69,9 @@ Announcer-facing application used to:
 
 ### Setup
 
-1. Clone this repository.
-2. Clone or link the companion repos.
-3. Configure the MongoDB connection string.
-4. Run the client and server apps as needed.
+1. Clone or link the companion repos.
+2. Configure the MongoDB connection string.
+3. Run the client and server apps as needed.
 
 ## Configuration
 
@@ -80,27 +79,11 @@ The apps expect a MongoDB connection string to be available in a file named ```C
 
 > Note: the file name should not include an extension.
 
-## Screenshots
-
-_Add screenshots of both apps here._
-
-## Demo Video
-
-_Add a short demo video or GIF here._
-
 ## Why this repository exists
 
 This repo is the public-facing home for the full project so the entire system can be represented with one link on a resume, portfolio, or GitHub Pages site.
 
-## Roadmap
-
-- Add a polished project landing page
-- Add architecture diagrams
-- Add screenshots and usage examples
-- Add deployment instructions for GitHub Pages
-- Add links to companion repositories and releases
-
 ## Credits
 
 Created by ```Timothy Miller```.  
-Built for the ```<event or tournament name>```.
+Built for the ```DillonWithABlankie's Pokemon Stadium Rental Tournament```.
