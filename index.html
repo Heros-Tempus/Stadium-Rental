@@ -22,6 +22,8 @@
   <p>
     This project consists of two coordinated applications that communicate through a shared MongoDB database.
     Players build and submit teams through the client app, while the server app processes inputs and drives tournament gameplay.
+    As the tournament was played on unmodified Nintendo 64 hardware, player inputs are set in the form of strings representing game inputs that the host then enters on the console.
+    Note that despite what the naming convention might imply, these apps do not use client/server architecture. It was just a useful way for me to conceptualize them.
   </p>
 </section>
 
@@ -35,8 +37,9 @@ Player → Client App → MongoDB → Server App → Tournament Output
 <section>
   <h2>How It Works</h2>
   <ul>
+    <li>Client app serves available party choices from the shared MongoDB cluster</li>
     <li>Players create and save their party</li>
-    <li>Data is stored in a shared MongoDB cluster</li>
+    <li>Party choices are stored in the cluster</li>
     <li>Players submit match inputs</li>
     <li>Server reads and translates inputs into game actions</li>
   </ul>
