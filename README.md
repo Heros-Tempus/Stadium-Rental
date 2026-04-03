@@ -12,12 +12,13 @@ This umbrella repo serves as the public home for the project and will eventually
 This project is made of two companion applications that work together through a shared database.  
 Players use the client app to build and save their party, then submit match inputs.  
 The announcer uses the server app to read those parties, process player inputs, and drive tournament play.
+Despite what the naming scheme may imply, the applications do not use server/client architecture, it was just a useful way for me to conceptualize them.
 
 ## Live Demo / Project Site
 
 - **Project site:** ```<GitHub Pages URL>```
-- **Client app repo:** ```<StadiumRentalClient repo link>```
-- **Server app repo:** ```<StadiumRentalServer repo link>```
+- **Client app repo:** ```[StadiumRentalClient repo link>](https://github.com/Heros-Tempus/StadiumRentalClient)```
+- **Server app repo:** ```[<StadiumRentalServer repo link>](https://github.com/Heros-Tempus/StadiumRentalServer)```
 
 ## What this system does
 
